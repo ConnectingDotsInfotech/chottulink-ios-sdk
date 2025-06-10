@@ -26,6 +26,8 @@ dependencies: [
     .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.0")
 ]
 ```
+> [!TIP]
+> Make sure to replace `1.0.0` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
 ### Manual Installation
 1. Download the latest `ChottuLinkSDK-x.x.x-xcframework.zip` from the [Github Releases](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
