@@ -1,9 +1,9 @@
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/yourusername/ChottuLinkSDK/releases)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/yourusername/ChottuLinkSDK/releases)
 # ChottuLinkSDK
 
-## 🚀 First Release!
+## 🚀 What's New in v1.0.1
 
-We're excited to announce the first release of ChottuLinkSDK, a powerful iOS framework for handling deep links, dynamic links, and deferred deep links in your iOS applications.
+This release adds full simulator support for both **Apple Silicon (arm64)** and **Intel (x86_64)** Macs via an updated `XCFramework`.
 
 ## ✨ Features
 
@@ -11,6 +11,7 @@ We're excited to announce the first release of ChottuLinkSDK, a powerful iOS fra
 - Dynamic Link Creation
 - Deferred Deep Links
 - Analytics Integration
+- ✅ Apple Silicon & Intel simulator compatibility (new in `v1.0.1`)
 
 ## 📋 Requirements
 
@@ -20,20 +21,43 @@ We're excited to announce the first release of ChottuLinkSDK, a powerful iOS fra
 
 ## 🚀 Installation
 
-### Swift Package Manager
+### ✅ Swift Package Manager (Recommended)
+
+Use the following in your Package.swift:
+
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.0")
+    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.1")
 ]
 ```
 > [!TIP]
-> Make sure to replace `1.0.0` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
+> Make sure to replace `1.0.1` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
-### Manual Installation
+### 📦 Manual Installation
+
 1. Download the latest `ChottuLinkSDK-x.x.x-xcframework.zip` from the [Github Releases](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
 2. Extract the zip file
-3. Drag `ChottuLinkSDK.framework` into your project
-4. Link the framework in your target's "Frameworks, Libraries, and Embedded Content" section
+3. Drag `ChottuLinkSDK.xcframework` into your project
+4. Ensure it is embedded in your target under "Frameworks, Libraries, and Embedded Content"
+
+## 🔍 File Integrity
+
+To verify the authenticity of the downloaded XCFramework:
+
+### SHA256 hash:
+
+```txt
+23588f12c2634f63062dc25170cac613567f60480285b7a5800043f6c17218b0
+```
+
+### You can check it using the terminal:
+
+```bash
+shasum -a 256 ChottuLinkSDK-x.x.x-xcframework.zip
+```
+
+> [!TIP]
+> Make sure to replace `x.x.x` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
 ## ⚡ Quick Start
 
@@ -47,10 +71,6 @@ dependencies: [
 3. [Initialize ChottuLink iOS SDK](https://docs.chottulink.com/get-started/ios-setup#-initialize-the-chottulink-sdk)
     - Add initialization code to AppDelegate
     - Configure Universal Links
-
-## 🔍 Verifying ChottuLinkSDK-1.0.0-xcframework.zip
-
-SHA256 Hash: `8143be28b3efb1abd515ce6152b92d41f7936fa2b23455cf34ab3a3127233155`
 
 ## 🧑‍💻 Documentation
 
@@ -82,13 +102,13 @@ We're actively working on:
 
 ## 📋 Changelog
 
-### Added
-- Initial release
-- Deep link handling
-- Dynamic link creation
-- Deferred deep link support
-- Analytics integration
-- Comprehensive error handling
-- Thread-safe operations
+### Latest – v1.0.1 (June 29, 2025)
 
-**Note**: This is our first release, and we welcome your feedback and suggestions for future improvements. Please report any issues or feature requests on our [GitHub Issues](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/issues) page.
+- ✅ Added Apple Silicon (arm64) and Intel (x86_64) simulator support
+- 🛠️ Improved XCFramework compatibility for modern Macs
+
+[View full changelog →](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/blob/main/CHANGELOG.md)
+
+> [!NOTE]
+> This is our first release, and we welcome your feedback and suggestions for future improvements.
+> Please report any issues or feature requests on our [GitHub Issues](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/issues) page.
