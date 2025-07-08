@@ -1,17 +1,27 @@
-[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/yourusername/ChottuLinkSDK/releases)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](https://github.com/yourusername/ChottuLinkSDK/releases)
 # ChottuLinkSDK
 
-## 🚀 What's New in v1.0.1
+## 🚀 What's New in v1.0.2
 
-This release adds full simulator support for both **Apple Silicon (arm64)** and **Intel (x86_64)** Macs via an updated `XCFramework`.
+This release introduces **async/await support** for dynamic link operations and improves type safety with enhanced error handling.
+
+### ✨ New Features
+- **Async/Await Support**: New `resolveDynamicLink` method with modern Swift concurrency
+- **Enhanced Type Safety**: Improved error handling and type safety
+- **Backward Compatibility**: Maintains support for existing implementations
+- **Updated Delegate Methods**: Enhanced metadata with originalURL support
+
+### ⚠️ Breaking Changes
+- `createDynamicLink` completion handler is now **deprecated** in favor of async version
 
 ## ✨ Features
 
 - Deep Link Handling
-- Dynamic Link Creation
+- Dynamic Link Creation (with async/await support)
 - Deferred Deep Links
 - Analytics Integration
-- ✅ Apple Silicon & Intel simulator compatibility (new in `v1.0.1`)
+- ✅ Apple Silicon & Intel simulator compatibility
+- ✅ Modern Swift concurrency support (new in `v1.0.2`)
 
 ## 📋 Requirements
 
@@ -27,11 +37,11 @@ Use the following in your Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.1")
+    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.2")
 ]
 ```
 > [!TIP]
-> Make sure to replace `1.0.1` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
+> Make sure to replace `1.0.2` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
 ### 📦 Manual Installation
 
@@ -47,7 +57,7 @@ To verify the authenticity of the downloaded XCFramework:
 ### SHA256 hash:
 
 ```txt
-23588f12c2634f63062dc25170cac613567f60480285b7a5800043f6c17218b0
+[Updated hash for v1.0.2 will be provided in release notes]
 ```
 
 ### You can check it using the terminal:
@@ -102,13 +112,17 @@ We're actively working on:
 
 ## 📋 Changelog
 
-### Latest – v1.0.1 (June 29, 2025)
+### Latest – v1.0.2 (July 8, 2025)
 
-- ✅ Added Apple Silicon (arm64) and Intel (x86_64) simulator support
-- 🛠️ Improved XCFramework compatibility for modern Macs
+- ✅ Added `resolveDynamicLink` method with async/await support
+- ⚠️ Deprecated `createDynamicLink` completion handler in favor of async version
+- 🔧 Updated delegate method to include originalURL in metadata
+- 🛠️ Improved type safety and error handling
+- ✅ Maintained backward compatibility
 
 [View full changelog →](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/blob/main/CHANGELOG.md)
 
 > [!NOTE]
-> This is our first release, and we welcome your feedback and suggestions for future improvements.
+> **Migration Notice**: If you're using the completion handler version of `createDynamicLink`, consider migrating to the new async/await API for better performance and modern Swift practices. The completion handler version is deprecated but will continue to work for backward compatibility.
+> 
 > Please report any issues or feature requests on our [GitHub Issues](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/issues) page.

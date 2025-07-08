@@ -6,6 +6,27 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.0.2] – 2025-07-08
+
+### ✅ Added
+- **Async/Await Support**: New `resolveDynamicLink` method with modern Swift concurrency
+- **Enhanced Type Safety**: Improved error handling and type safety
+- **Updated Delegate Methods**: Enhanced metadata with originalURL support
+
+### ⚠️ Breaking Changes
+- `createDynamicLink` completion handler is now **deprecated** in favor of async version
+
+### 🛠️ Improvements
+- Maintained backward compatibility with existing implementations
+- Enhanced error handling and type safety
+- Improved delegate method metadata
+
+### 📋 Notes
+- The completion handler version of `createDynamicLink` is deprecated but will continue to work
+- Consider migrating to the new async/await API for better performance and modern Swift practices
+
+---
+
 ## [1.0.1] – 2025-06-29
 
 ### ✅ Added
