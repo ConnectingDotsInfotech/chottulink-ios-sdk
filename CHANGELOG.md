@@ -6,6 +6,15 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.0.3] – 2025-07-09
+
+### ✅ Added
+- **Cross-Platform API Consistency**: New `getAppLinkDataFromUrl(from:)` method for SDK consistency
+- **Enhanced Error Handling**: Improved error handling and logging
+
+### ⚠️ Breaking Changes
+- **Removed `resolveDynamicLink(from:)` method** - Migration required to new API
+
 ## [1.0.2] – 2025-07-08
 
 ### ✅ Added

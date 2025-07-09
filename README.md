@@ -1,9 +1,9 @@
-[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](https://github.com/yourusername/ChottuLinkSDK/releases)
+[![Version](https://img.shields.io/badge/version-1.0.3-blue.svg)](https://github.com/yourusername/ChottuLinkSDK/releases)
 # ChottuLinkSDK
 
-## 🚀 What's New in v1.0.2
+## 🚀 What's New in `v1.0.3`
 
-This release introduces **async/await support** for dynamic link operations and improves type safety with enhanced error handling.
+This release introduces **cross-platform API consistency** enhances error handling for better developer experience.
 
 ### ✨ New Features
 - **Async/Await Support**: New `resolveDynamicLink` method with modern Swift concurrency
@@ -12,7 +12,7 @@ This release introduces **async/await support** for dynamic link operations and 
 - **Updated Delegate Methods**: Enhanced metadata with originalURL support
 
 ### ⚠️ Breaking Changes
-- `createDynamicLink` completion handler is now **deprecated** in favor of async version
+- **Removed `resolveDynamicLink(from:)` method** - Migration required to new API
 
 ## ✨ Features
 
@@ -20,8 +20,8 @@ This release introduces **async/await support** for dynamic link operations and 
 - Dynamic Link Creation (with async/await support)
 - Deferred Deep Links
 - Analytics Integration
-- ✅ Apple Silicon & Intel simulator compatibility
-- ✅ Modern Swift concurrency support (new in `v1.0.2`)
+- Apple Silicon & Intel simulator compatibility
+- Modern Swift concurrency support
 
 ## 📋 Requirements
 
@@ -37,11 +37,11 @@ Use the following in your Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.2")
+    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.3")
 ]
 ```
 > [!TIP]
-> Make sure to replace `1.0.2` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
+> Make sure to replace `1.0.3` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
 ### 📦 Manual Installation
 
@@ -57,7 +57,7 @@ To verify the authenticity of the downloaded XCFramework:
 ### SHA256 hash:
 
 ```txt
-[Updated hash for v1.0.2 will be provided in release notes]
+[Updated hash for v1.0.3 will be provided in release notes]
 ```
 
 ### You can check it using the terminal:
@@ -112,17 +112,15 @@ We're actively working on:
 
 ## 📋 Changelog
 
-### Latest – v1.0.2 (July 8, 2025)
+### Latest – v1.0.3 (July 9, 2025)
 
-- ✅ Added `resolveDynamicLink` method with async/await support
-- ⚠️ Deprecated `createDynamicLink` completion handler in favor of async version
-- 🔧 Updated delegate method to include originalURL in metadata
-- 🛠️ Improved type safety and error handling
-- ✅ Maintained backward compatibility
+- Added `getAppLinkDataFromUrl(from:)` method for Android SDK consistency
+- Enhanced error handling and logging
+- ⚠️ **Breaking Change**: Removed `resolveDynamicLink(from:)` method
+- ⚠️ **Migration required** - Update method calls to use new API
 
 [View full changelog →](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/blob/main/CHANGELOG.md)
 
 > [!NOTE]
-> **Migration Notice**: If you're using the completion handler version of `createDynamicLink`, consider migrating to the new async/await API for better performance and modern Swift practices. The completion handler version is deprecated but will continue to work for backward compatibility.
-> 
+> **Breaking Change Alert**: v1.0.3 removes the `resolveDynamicLink(from:)` method. You must migrate to the new `getAppLinkDataFromUrl(from:)` method.
 > Please report any issues or feature requests on our [GitHub Issues](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/issues) page.

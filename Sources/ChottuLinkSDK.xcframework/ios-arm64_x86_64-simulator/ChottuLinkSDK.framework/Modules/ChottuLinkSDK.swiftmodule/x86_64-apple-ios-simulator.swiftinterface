@@ -12,7 +12,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 public struct ResolvedLink : Swift.Codable, Swift.Sendable {
   public let link: Foundation.URL?
-  public let originalURL: Foundation.URL?
+  public let shortLink: Foundation.URL?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -103,7 +103,7 @@ extension ChottuLinkSDK.CLDynamicLinkBuilder {
   @available(swift, deprecated: 5.5, message: "Use the async version of `createDynamicLink(for:)` instead.")
   @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder, completion: @escaping (_ link: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
   @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder) async throws -> Swift.String?
-  @_Concurrency.MainActor public static func resolveDynamicLink(from shortURL: Swift.String) async throws -> ChottuLinkSDK.ResolvedLink
+  @_Concurrency.MainActor public static func getAppLinkDataFromUrl(from shortURL: Swift.String) async throws -> ChottuLinkSDK.ResolvedLink
   @objc deinit
 }
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.Equatable {}

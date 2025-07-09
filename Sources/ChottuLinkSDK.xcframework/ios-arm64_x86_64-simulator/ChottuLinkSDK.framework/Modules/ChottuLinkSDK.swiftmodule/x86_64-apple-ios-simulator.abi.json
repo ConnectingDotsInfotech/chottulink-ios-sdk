@@ -91,8 +91,8 @@
           },
           {
             "kind": "Var",
-            "name": "originalURL",
-            "printedName": "originalURL",
+            "name": "shortLink",
+            "printedName": "shortLink",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -110,8 +110,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13ChottuLinkSDK08ResolvedB0V11originalURL10Foundation0F0VSgvp",
-            "mangledName": "$s13ChottuLinkSDK08ResolvedB0V11originalURL10Foundation0F0VSgvp",
+            "usr": "s:13ChottuLinkSDK08ResolvedB0V05shortB010Foundation3URLVSgvp",
+            "mangledName": "$s13ChottuLinkSDK08ResolvedB0V05shortB010Foundation3URLVSgvp",
             "moduleName": "ChottuLinkSDK",
             "declAttributes": [
               "HasStorage",
@@ -141,8 +141,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13ChottuLinkSDK08ResolvedB0V11originalURL10Foundation0F0VSgvg",
-                "mangledName": "$s13ChottuLinkSDK08ResolvedB0V11originalURL10Foundation0F0VSgvg",
+                "usr": "s:13ChottuLinkSDK08ResolvedB0V05shortB010Foundation3URLVSgvg",
+                "mangledName": "$s13ChottuLinkSDK08ResolvedB0V05shortB010Foundation3URLVSgvg",
                 "moduleName": "ChottuLinkSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2621,16 +2621,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ChottuLinkSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -2849,8 +2839,8 @@
           },
           {
             "kind": "Function",
-            "name": "resolveDynamicLink",
-            "printedName": "resolveDynamicLink(from:)",
+            "name": "getAppLinkDataFromUrl",
+            "printedName": "getAppLinkDataFromUrl(from:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2866,8 +2856,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ChottuLinkSDK0aB0C014resolveDynamicB04fromAA08ResolvedB0VSS_tYaKFZ",
-            "mangledName": "$s13ChottuLinkSDK0aB0C014resolveDynamicB04fromAA08ResolvedB0VSS_tYaKFZ",
+            "usr": "s:13ChottuLinkSDK0aB0C06getAppB11DataFromUrl4fromAA08ResolvedB0VSS_tYaKFZ",
+            "mangledName": "$s13ChottuLinkSDK0aB0C06getAppB11DataFromUrl4fromAA08ResolvedB0VSS_tYaKFZ",
             "moduleName": "ChottuLinkSDK",
             "static": true,
             "declAttributes": [
@@ -3005,6 +2995,16 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ChottuLinkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
@@ -3013,9 +3013,16 @@
     {
       "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/ResolvedDeeplinkResponse.swift",
       "kind": "StringLiteral",
-      "offset": 399,
+      "offset": 425,
       "length": 17,
       "value": "\"destination_url\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/ResolvedDeeplinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 11,
+      "value": "\"short_url\""
     },
     {
       "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLConfiguration.swift",
@@ -3361,6 +3368,34 @@
       "value": "\"short_url\""
     },
     {
+      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 12,
+      "value": "\"CL_API_KEY\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 17,
+      "value": "\"CL_ANONYMOUS_ID\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
+      "kind": "BooleanLiteral",
+      "offset": 560,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 515,
+      "length": 15,
+      "value": "\"CL_FIRST_TIME\""
+    },
+    {
       "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
       "kind": "StringLiteral",
       "offset": 429,
@@ -3408,34 +3443,6 @@
       "offset": 661,
       "length": 12,
       "value": "\"match_type\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 284,
-      "length": 12,
-      "value": "\"CL_API_KEY\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 393,
-      "length": 17,
-      "value": "\"CL_ANONYMOUS_ID\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
-      "kind": "BooleanLiteral",
-      "offset": 560,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 515,
-      "length": 15,
-      "value": "\"CL_FIRST_TIME\""
     }
   ]
 }
