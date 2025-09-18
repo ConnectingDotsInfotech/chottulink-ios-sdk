@@ -6,6 +6,16 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.0.4] – 2025-09-18
+
+### ✅ Added
+- **Expanded Device Support**: Lowered minimum iOS requirement from 15.6 to 15.0
+- **Broader Compatibility**: Now supports older iOS devices running iOS 15.0+
+
+### 🛠️ Improvements
+- Enhanced device compatibility without breaking existing functionality
+- Maintained full backward compatibility with all previous versions
+
 ## [1.0.3] – 2025-07-09
 
 ### ✅ Added

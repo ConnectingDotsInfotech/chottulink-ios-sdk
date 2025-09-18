@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name ChottuLinkSDK
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name ChottuLinkSDK
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import Foundation
 import OSLog
@@ -10,38 +10,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct ResolvedLink : Swift.Codable, Swift.Sendable {
-  public let link: Foundation.URL?
-  public let shortLink: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@_Concurrency.MainActor public protocol ChottuLinkDelegate : AnyObject {
-  @_Concurrency.MainActor func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
-  @_Concurrency.MainActor func chottuLink(didFailToInitializeWith error: any Swift.Error)
-  @_Concurrency.MainActor func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
-  @_Concurrency.MainActor func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
-}
-extension ChottuLinkSDK.ChottuLinkDelegate {
-  @_Concurrency.MainActor public func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
-  @_Concurrency.MainActor public func chottuLink(didFailToInitializeWith error: any Swift.Error)
-  @_Concurrency.MainActor public func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
-  @_Concurrency.MainActor public func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
-}
-public enum ChottuLinkError : Foundation.LocalizedError {
-  case badRequest
-  case duplicatePath
-  case invalidAPIKey
-  case invalidURL
-  case invalidResponse
-  case missingKeys(keys: [Swift.String])
-  case notInitialized
-  case networkError(any Swift.Error)
-  case serverError(statusCode: Swift.Int)
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
 public struct CLConfiguration {
   public var apiKey: Swift.String
   public var isDebugEnabled: Swift.Bool
@@ -105,6 +73,38 @@ extension ChottuLinkSDK.CLDynamicLinkBuilder {
   @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder) async throws -> Swift.String?
   @_Concurrency.MainActor public static func getAppLinkDataFromUrl(from shortURL: Swift.String) async throws -> ChottuLinkSDK.ResolvedLink
   @objc deinit
+}
+public struct ResolvedLink : Swift.Codable, Swift.Sendable {
+  public let link: Foundation.URL?
+  public let shortLink: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_Concurrency.MainActor public protocol ChottuLinkDelegate : AnyObject {
+  @_Concurrency.MainActor func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
+  @_Concurrency.MainActor func chottuLink(didFailToInitializeWith error: any Swift.Error)
+  @_Concurrency.MainActor func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
+  @_Concurrency.MainActor func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
+}
+extension ChottuLinkSDK.ChottuLinkDelegate {
+  @_Concurrency.MainActor public func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
+  @_Concurrency.MainActor public func chottuLink(didFailToInitializeWith error: any Swift.Error)
+  @_Concurrency.MainActor public func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
+  @_Concurrency.MainActor public func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
+}
+public enum ChottuLinkError : Foundation.LocalizedError {
+  case badRequest
+  case duplicatePath
+  case invalidAPIKey
+  case invalidURL
+  case invalidResponse
+  case missingKeys(keys: [Swift.String])
+  case notInitialized
+  case networkError(any Swift.Error)
+  case serverError(statusCode: Swift.Int)
+  public var errorDescription: Swift.String? {
+    get
+  }
 }
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.Equatable {}
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.Hashable {}

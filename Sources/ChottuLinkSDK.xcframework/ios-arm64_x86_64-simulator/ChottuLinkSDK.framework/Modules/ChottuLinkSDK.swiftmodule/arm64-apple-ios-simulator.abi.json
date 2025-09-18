@@ -16,63 +16,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ChottuLinkSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ChottuLinkSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ChottuLinkSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ChottuLinkSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ChottuLinkSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ChottuLinkSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -3005,444 +2948,501 @@
         "printedName": "OSLog",
         "declKind": "Import",
         "moduleName": "ChottuLinkSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ChottuLinkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ChottuLinkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ChottuLinkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ChottuLinkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ChottuLinkSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ChottuLinkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CreateDynaminLinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 8,
-      "value": "\"status\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CreateDynaminLinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 332,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CreateDynaminLinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 366,
-      "length": 11,
-      "value": "\"short_url\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 429,
-      "length": 14,
-      "value": "\"original_url\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 474,
-      "length": 17,
-      "value": "\"destination_url\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 516,
-      "length": 11,
-      "value": "\"short_url\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 549,
-      "length": 8,
-      "value": "\"org_id\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 583,
-      "length": 12,
-      "value": "\"utm_params\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 622,
-      "length": 13,
-      "value": "\"match_found\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 661,
-      "length": 12,
-      "value": "\"match_type\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 284,
-      "length": 12,
-      "value": "\"CL_API_KEY\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 393,
-      "length": 17,
-      "value": "\"CL_ANONYMOUS_ID\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
-      "kind": "BooleanLiteral",
-      "offset": 560,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 515,
-      "length": 15,
-      "value": "\"CL_FIRST_TIME\""
-    },
-    {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/ResolvedDeeplinkResponse.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/ResolvedDeeplinkResponse.swift",
       "kind": "StringLiteral",
       "offset": 425,
       "length": 17,
       "value": "\"destination_url\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/ResolvedDeeplinkResponse.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/ResolvedDeeplinkResponse.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 11,
       "value": "\"short_url\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLConfiguration.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3347,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLConfiguration.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 5317,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 25,
       "value": "\"https:\/\/api.chottu.link\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 353,
       "length": 7,
       "value": "\"\/app\/\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 44,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 434,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 749,
       "length": 44,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 769,
       "length": 3,
       "value": "\"api\/v1\/retrieveDeviceId\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 970,
       "length": 39,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 990,
       "length": 3,
       "value": "\"api\/v1\/device_ping\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 1229,
       "length": 51,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 1249,
       "length": 3,
       "value": "\"api\/v1\/getAnyDeferredDeeplinks\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 1501,
       "length": 35,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 1521,
       "length": 3,
       "value": "\"api\/v1\/resolve\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 1718,
       "length": 39,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Networking\/CLUrls.swift",
       "kind": "StringLiteral",
       "offset": 1738,
       "length": 3,
       "value": "\"api\/v1\/create_link\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBehaviour.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBehaviour.swift",
       "kind": "IntegerLiteral",
       "offset": 1988,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBehaviour.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBehaviour.swift",
       "kind": "IntegerLiteral",
       "offset": 2847,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12027,
       "length": 9,
       "value": "\"api_key\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12061,
       "length": 11,
       "value": "\"device_id\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12114,
       "length": 18,
       "value": "\"android_behavior\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12163,
       "length": 17,
       "value": "\"destination_url\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12203,
       "length": 8,
       "value": "\"domain\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12240,
       "length": 14,
       "value": "\"ios_behavior\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12279,
       "length": 11,
       "value": "\"link_name\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12319,
       "length": 15,
       "value": "\"selected_path\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12406,
       "length": 20,
       "value": "\"social_description\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12457,
       "length": 18,
       "value": "\"social_image_url\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12503,
       "length": 14,
       "value": "\"social_title\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12578,
       "length": 12,
       "value": "\"utm_source\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12616,
       "length": 12,
       "value": "\"utm_medium\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12656,
       "length": 14,
       "value": "\"utm_campaign\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12697,
       "length": 13,
       "value": "\"utm_content\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CLDynamicLinkBuilder.swift",
       "kind": "StringLiteral",
       "offset": 12734,
       "length": 10,
       "value": "\"utm_term\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 12,
       "value": "\"🔍 DEBUG\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "StringLiteral",
       "offset": 527,
       "length": 13,
       "value": "\"ℹ️ INFO\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "StringLiteral",
       "offset": 564,
       "length": 13,
       "value": "\"✅ SUCCESS\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "StringLiteral",
       "offset": 601,
       "length": 16,
       "value": "\"⚠️ WARNING\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "StringLiteral",
       "offset": 639,
       "length": 11,
       "value": "\"❌ ERROR\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "StringLiteral",
       "offset": 1156,
       "length": 19,
       "value": "\"com.chottulin.sdk\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "StringLiteral",
       "offset": 1195,
       "length": 14,
       "value": "\"ChottuLinSDK\""
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1333,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1454,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1774,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mrtipster49\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/CLLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1817,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CreateDynaminLinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CreateDynaminLinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 332,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/CreateDynaminLinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 366,
+      "length": 11,
+      "value": "\"short_url\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 429,
+      "length": 14,
+      "value": "\"original_url\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 474,
+      "length": 17,
+      "value": "\"destination_url\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 516,
+      "length": 11,
+      "value": "\"short_url\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 549,
+      "length": 8,
+      "value": "\"org_id\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 12,
+      "value": "\"utm_params\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 622,
+      "length": 13,
+      "value": "\"match_found\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Core\/Models\/DeferredDeeplinkResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 661,
+      "length": 12,
+      "value": "\"match_type\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 12,
+      "value": "\"CL_API_KEY\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 17,
+      "value": "\"CL_ANONYMOUS_ID\""
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
+      "kind": "BooleanLiteral",
+      "offset": 560,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mrtipster49_imac\/Desktop\/Projects\/chottulink-ios-framework\/ChottuLinkSDK\/Sources\/Utilities\/StorageKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 515,
+      "length": 15,
+      "value": "\"CL_FIRST_TIME\""
     }
   ]
 }

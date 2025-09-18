@@ -1,9 +1,9 @@
-[![Version](https://img.shields.io/badge/version-1.0.3-blue.svg)](https://github.com/yourusername/ChottuLinkSDK/releases)
+[![Version](https://img.shields.io/badge/version-1.0.4-blue.svg)](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
 # ChottuLinkSDK
 
-## 🚀 What's New in `v1.0.3`
+## 🚀 What's New in `v1.0.4`
 
-This release introduces **cross-platform API consistency** enhances error handling for better developer experience.
+This release **expands device compatibility** by lowering the minimum iOS requirement.
 
 ### ✨ New Features
 - **Async/Await Support**: New `resolveDynamicLink` method with modern Swift concurrency
@@ -22,10 +22,11 @@ This release introduces **cross-platform API consistency** enhances error handli
 - Analytics Integration
 - Apple Silicon & Intel simulator compatibility
 - Modern Swift concurrency support
+- **Broader Device Support**: Compatible with iOS 15.0+ devices
 
 ## 📋 Requirements
 
-- iOS 15.6+
+- iOS 15.0+
 - Xcode 16.0+
 - Swift 6.0+
 
@@ -37,11 +38,11 @@ Use the following in your Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.3")
+    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.4")
 ]
 ```
 > [!TIP]
-> Make sure to replace `1.0.3` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
+> Make sure to replace `1.0.4` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
 ### 📦 Manual Installation
 
@@ -57,7 +58,7 @@ To verify the authenticity of the downloaded XCFramework:
 ### SHA256 hash:
 
 ```txt
-[Updated hash for v1.0.3 will be provided in release notes]
+[Updated hash for v1.0.4 will be provided in release notes]
 ```
 
 ### You can check it using the terminal:
@@ -112,15 +113,15 @@ We're actively working on:
 
 ## 📋 Changelog
 
-### Latest – v1.0.3 (July 9, 2025)
+### Latest – v1.0.4 (Current Release)
 
-- Added `getAppLinkDataFromUrl(from:)` method for Android SDK consistency
-- Enhanced error handling and logging
-- ⚠️ **Breaking Change**: Removed `resolveDynamicLink(from:)` method
-- ⚠️ **Migration required** - Update method calls to use new API
+- **Lowered minimum iOS requirement from 15.6 to 15.0** for broader device support
+- Expanded compatibility with older iOS devices
+- No breaking changes - fully backward compatible
 
 [View full changelog →](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/blob/main/CHANGELOG.md)
 
 > [!NOTE]
-> **Breaking Change Alert**: v1.0.3 removes the `resolveDynamicLink(from:)` method. You must migrate to the new `getAppLinkDataFromUrl(from:)` method.
+> **Compatibility Update**: v1.0.4 lowers the minimum iOS requirement to 15.0, expanding device support while maintaining full backward compatibility.
 > Please report any issues or feature requests on our [GitHub Issues](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/issues) page.
+
