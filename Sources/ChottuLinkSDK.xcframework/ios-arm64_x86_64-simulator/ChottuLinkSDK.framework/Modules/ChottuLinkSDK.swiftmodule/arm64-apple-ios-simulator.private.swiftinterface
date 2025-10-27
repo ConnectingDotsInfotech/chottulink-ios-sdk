@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name ChottuLinkSDK
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import OSLog
 import Swift
@@ -10,33 +10,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class ChottuLink : ObjectiveC.NSObject {
-  @_Concurrency.MainActor public static func initialize(config: ChottuLinkSDK.CLConfiguration)
-  @_Concurrency.MainActor public static func handleLink(_ shortURL: Foundation.URL)
-  @available(swift, deprecated: 5.5, message: "Use the async version of `createDynamicLink(for:)` instead.")
-  @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder, completion: @escaping (_ link: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
-  @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder) async throws -> Swift.String?
-  @_Concurrency.MainActor public static func getAppLinkDataFromUrl(from shortURL: Swift.String) async throws -> ChottuLinkSDK.ResolvedLink
-  @objc deinit
-}
-public struct ResolvedLink : Swift.Codable, Swift.Sendable {
-  public let link: Foundation.URL?
-  public let shortLink: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@_Concurrency.MainActor public protocol ChottuLinkDelegate : AnyObject {
-  @_Concurrency.MainActor func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
-  @_Concurrency.MainActor func chottuLink(didFailToInitializeWith error: any Swift.Error)
-  @_Concurrency.MainActor func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
-  @_Concurrency.MainActor func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
-}
-extension ChottuLinkSDK.ChottuLinkDelegate {
-  @_Concurrency.MainActor public func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
-  @_Concurrency.MainActor public func chottuLink(didFailToInitializeWith error: any Swift.Error)
-  @_Concurrency.MainActor public func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
-  @_Concurrency.MainActor public func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
-}
 public enum ChottuLinkError : Foundation.LocalizedError {
   case badRequest
   case duplicatePath
@@ -47,20 +20,26 @@ public enum ChottuLinkError : Foundation.LocalizedError {
   case notInitialized
   case networkError(any Swift.Error)
   case serverError(statusCode: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 public struct CLConfiguration {
   public var apiKey: Swift.String
   public var isDebugEnabled: Swift.Bool
   public var delegate: (any ChottuLinkSDK.ChottuLinkDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(apiKey: Swift.String, isDebugEnabled: Swift.Bool = false, delegate: (any ChottuLinkSDK.ChottuLinkDelegate)? = nil)
+  #endif
 }
 public enum CLDynamicLinkBehaviour : Swift.Int, Swift.CaseIterable, Swift.Codable, Swift.Sendable {
   case browser
   case app
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [ChottuLinkSDK.CLDynamicLinkBehaviour]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [ChottuLinkSDK.CLDynamicLinkBehaviour] {
@@ -101,12 +80,53 @@ public struct CLDynamicLinkBuilder : Swift.Codable, Swift.Sendable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension ChottuLinkSDK.CLDynamicLinkBuilder {
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public func setUTMParameters(source: Swift.String, medium: Swift.String, campaign: Swift.String, content: Swift.String? = nil, term: Swift.String? = nil) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  #endif
   @discardableResult
   public func setSocialParameters(title: Swift.String, description: Swift.String, imageUrl: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
 }
-extension ChottuLinkSDK.ChottuLink : Swift.Sendable {}
+public struct ResolvedLink : Swift.Codable, Swift.Sendable {
+  public let link: Foundation.URL?
+  public let shortLink: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_Concurrency.MainActor public protocol ChottuLinkDelegate : AnyObject {
+  @_Concurrency.MainActor func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
+  @_Concurrency.MainActor func chottuLink(didFailToInitializeWith error: any Swift.Error)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
+  #endif
+}
+extension ChottuLinkSDK.ChottuLinkDelegate {
+  @_Concurrency.MainActor public func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
+  @_Concurrency.MainActor public func chottuLink(didFailToInitializeWith error: any Swift.Error)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
+  #endif
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class ChottuLink : ObjectiveC.NSObject {
+  @_Concurrency.MainActor public static func initialize(config: ChottuLinkSDK.CLConfiguration)
+  @_Concurrency.MainActor public static func handleLink(_ shortURL: Foundation.URL)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(swift, deprecated: 5.5, message: "Use the async version of `createDynamicLink(for:)` instead.")
+  @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder, completion: @escaping (_ link: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder) async throws -> Swift.String?
+  #endif
+  @_Concurrency.MainActor public static func getAppLinkDataFromUrl(from shortURL: Swift.String) async throws -> ChottuLinkSDK.ResolvedLink
+  @objc deinit
+}
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.Equatable {}
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.Hashable {}
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.RawRepresentable {}
+extension ChottuLinkSDK.ChottuLink : Swift.Sendable {}
