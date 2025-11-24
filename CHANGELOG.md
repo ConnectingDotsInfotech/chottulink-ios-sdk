@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.0.7] – 2025-11-24
+
+### ✅ Added
+- **Enhanced Metadata Support**: Expose `shortLinkRaw` in metadata
+- Improved access to short link information for analytics and tracking purposes
+
 ## [1.0.5] – 2025-10-23
 - **Minor bug fixes** to improve stability and reliability
 - Improved error handling and edge case coverage

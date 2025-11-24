@@ -1,13 +1,9 @@
-[![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
+[![Version](https://img.shields.io/badge/version-1.0.7-blue.svg)](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
 # ChottuLinkSDK
 
-## 🚀 What's New in `v1.0.5`
+## 🚀 What's New in `v1.0.7`
 
-This release includes **minor bug fixes** to improve stability and reliability.
-
-### 🐛 Bug Fixes
-- Improved error handling and edge case coverage
-- Enhanced overall SDK stability
+This release adds **enhanced metadata support** for better link tracking and analytics.
 
 ## 🚀 Features
 
@@ -33,11 +29,11 @@ Use the following in your Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.5")
+    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.7")
 ]
 ```
 > [!TIP]
-> Make sure to replace `1.0.5` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
+> Make sure to replace `1.0.7` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
 ### 📦 Manual Installation
 
@@ -53,7 +49,7 @@ To verify the authenticity of the downloaded XCFramework:
 ### SHA256 hash:
 
 ```txt
-[Updated hash for v1.0.5 will be provided in release notes]
+[Updated hash for v1.0.7 will be provided in release notes]
 ```
 
 ### You can check it using the terminal:
@@ -108,16 +104,14 @@ We're actively working on:
 
 ## 📋 Changelog
 
-### Latest – v1.0.5 (Current Release)
+### Latest – v1.0.7 (Current Release)
 
-- **Minor bug fixes** to improve stability and reliability
-- Improved error handling and edge case coverage
-- Enhanced overall SDK performance
+- **Enhanced Metadata**: Expose `shortLinkRaw` in metadata
+- Better metadata availability for link analytics
 - Fully backward compatible with previous versions
 
 [View full changelog →](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/blob/main/CHANGELOG.md)
 
 > [!NOTE]
-> **Compatibility Update**: v1.0.4+ lowers the minimum iOS requirement to 15.0, expanding device support while maintaining full backward compatibility.
 > Please report any issues or feature requests on our [GitHub Issues](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/issues) page.
 
