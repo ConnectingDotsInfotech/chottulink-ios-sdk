@@ -6,6 +6,17 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.0.8] – 2025-12-02
+
+### ✅ Added
+- **Exposed `shortLinkRaw` in `getAppLinkDataFromUrl` method**: Direct access to raw short link data for enhanced link analytics and tracking
+- **3-second delay for missing credentials**: Added automatic 3-second delay in `handleLink` methods when credentials are missing to improve reliability and reduce transient failures
+
+### 🛠️ Improvements
+- **Enhanced Error Handling**: Improved error handling across all methods with more descriptive error messages and better error recovery mechanisms
+- Better error reporting for debugging and troubleshooting
+- More robust handling of edge cases and network failures
+
 ## [1.0.7] – 2025-11-24
 
 ### ✅ Added

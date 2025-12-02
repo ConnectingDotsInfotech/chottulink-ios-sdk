@@ -1,9 +1,14 @@
-[![Version](https://img.shields.io/badge/version-1.0.7-blue.svg)](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
+[![Version](https://img.shields.io/badge/version-1.0.8-blue.svg)](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
 # ChottuLinkSDK
 
-## 🚀 What's New in `v1.0.7`
+## 🚀 What's New in `v1.0.8`
 
-This release adds **enhanced metadata support** for better link tracking and analytics.
+This release includes **enhanced link data access**, **improved credential handling**, and **better error handling** across all methods.
+
+### Key Updates:
+- **Exposed `shortLinkRaw`** in `getAppLinkDataFromUrl` method for direct access to raw short link data
+- **Added 3-second delay** for missing credentials in `handleLink` methods to improve reliability
+- **Improved error handling** for all methods with more descriptive error messages and better error recovery
 
 ## 🚀 Features
 
@@ -29,11 +34,11 @@ Use the following in your Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.7")
+    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.8")
 ]
 ```
 > [!TIP]
-> Make sure to replace `1.0.7` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
+> Make sure to replace `1.0.8` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
 ### 📦 Manual Installation
 
@@ -49,7 +54,7 @@ To verify the authenticity of the downloaded XCFramework:
 ### SHA256 hash:
 
 ```txt
-[Updated hash for v1.0.7 will be provided in release notes]
+[Updated hash for v1.0.8 will be provided in release notes]
 ```
 
 ### You can check it using the terminal:
@@ -104,10 +109,11 @@ We're actively working on:
 
 ## 📋 Changelog
 
-### Latest – v1.0.7 (Current Release)
+### Latest – v1.0.8 (Current Release)
 
-- **Enhanced Metadata**: Expose `shortLinkRaw` in metadata
-- Better metadata availability for link analytics
+- **Exposed `shortLinkRaw`**: Now available in `getAppLinkDataFromUrl` method for direct access to raw short link data
+- **Credential Handling**: Added 3-second delay for missing credentials in `handleLink` methods to improve reliability
+- **Error Handling**: Improved error handling across all methods with more descriptive error messages and better error recovery
 - Fully backward compatible with previous versions
 
 [View full changelog →](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/blob/main/CHANGELOG.md)
