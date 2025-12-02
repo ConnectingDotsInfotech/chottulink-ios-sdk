@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name ChottuLinkSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import Foundation
 import OSLog
 import Swift
@@ -16,8 +16,10 @@ public enum ChottuLinkError : Foundation.LocalizedError {
   case invalidAPIKey
   case invalidURL
   case invalidResponse
+  case notAuthorized
   case missingKeys(keys: [Swift.String])
   case notInitialized
+  case shortURLNotFound
   case networkError(any Swift.Error)
   case serverError(statusCode: Swift.Int)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -88,8 +90,10 @@ extension ChottuLinkSDK.CLDynamicLinkBuilder {
   public func setSocialParameters(title: Swift.String, description: Swift.String, imageUrl: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
 }
 public struct ResolvedLink : Swift.Codable, Swift.Sendable {
+  public let isDeferred: Swift.Bool
   public let link: Foundation.URL?
   public let shortLink: Foundation.URL?
+  public let shortLinkRaw: Foundation.URL?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
