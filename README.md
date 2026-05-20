@@ -1,6 +1,17 @@
 [![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
 # ChottuLinkSDK
 
+## Powered by ChottuLink
+
+Drop-in replacement for Firebase Dynamic Links with deferred deep linking, custom domains & real-time analytics.
+
+→ [Visit chottulink.com](https://chottulink.com)  
+→ [Get Started](https://app.chottulink.com/register)  
+→ [Try free deep link tester tool](https://chottulink.com/tools/deep-link-tester/index.html)  
+→ [Firebase Dynamic Links vs ChottuLink – Migration Guide](BLOG_URL_HERE)
+
+---
+
 ## 🚀 What's New in `v1.1.0`
 
 This release includes internal improvements and stability updates.
@@ -33,7 +44,7 @@ dependencies: [
 ]
 ```
 > [!TIP]
-> Make sure to replace `1.0.8` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
+> Make sure to replace `1.1.0` with the latest version of the SDK. You can find the latest version on our [GitHub repository](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases).
 
 ### 📦 Manual Installation
 
@@ -49,7 +60,7 @@ To verify the authenticity of the downloaded XCFramework:
 ### SHA256 hash:
 
 ```txt
-[Updated hash for v1.0.8 will be provided in release notes]
+[Updated hash for v1.1.0 will be provided in release notes]
 ```
 
 ### You can check it using the terminal:
