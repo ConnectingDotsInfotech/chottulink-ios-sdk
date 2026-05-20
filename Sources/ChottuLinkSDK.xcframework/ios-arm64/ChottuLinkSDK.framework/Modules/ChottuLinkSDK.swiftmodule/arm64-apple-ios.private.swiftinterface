@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name ChottuLinkSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ChottuLinkSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import Foundation
 import OSLog
 import Swift
@@ -10,38 +10,80 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum ChottuLinkError : Foundation.LocalizedError {
-  case badRequest
-  case duplicatePath
-  case invalidAPIKey
-  case invalidURL
-  case invalidResponse
-  case notAuthorized
-  case missingKeys(keys: [Swift.String])
-  case notInitialized
-  case shortURLNotFound
-  case networkError(any Swift.Error)
-  case serverError(statusCode: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
+@objc public enum ChottuLinkError : Swift.Int, Foundation.LocalizedError {
+  case badRequest = 0
+  case duplicatePath = 1
+  case invalidAPIKey = 2
+  case invalidURL = 3
+  case invalidResponse = 4
+  case missingKeys = 5
+  case notInitialized = 6
+  case networkError = 7
+  case serverError = 8
+  case notAuthorized = 9
+  case shortURLNotFound = 10
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
-}
-public struct CLConfiguration {
-  public var apiKey: Swift.String
-  public var isDebugEnabled: Swift.Bool
-  public var delegate: (any ChottuLinkSDK.ChottuLinkDelegate)?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(apiKey: Swift.String, isDebugEnabled: Swift.Bool = false, delegate: (any ChottuLinkSDK.ChottuLinkDelegate)? = nil)
-  #endif
-}
-public enum CLDynamicLinkBehaviour : Swift.Int, Swift.CaseIterable, Swift.Codable, Swift.Sendable {
-  case browser
-  case app
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class CLAttributionData : ObjectiveC.NSObject {
+  @objc final public let attributionType: Swift.String
+  @objc final public let installId: Swift.String?
+  @objc final public let matchFound: Swift.Bool
+  @objc final public let matchType: Swift.String?
+  @objc final public let shortUrl: Swift.String?
+  @objc final public let clickedShortUrl: Swift.String?
+  @objc final public let destinationUrl: Swift.String?
+  @objc final public let destinationWithUtm: Swift.String?
+  @objc final public let utmSource: Swift.String?
+  @objc final public let utmMedium: Swift.String?
+  @objc final public let utmCampaign: Swift.String?
+  @objc final public let utmTerm: Swift.String?
+  @objc final public let utmContent: Swift.String?
+  @objc final public var isAttributed: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public class CLConfiguration : ObjectiveC.NSObject {
+  @objc public var apiKey: Swift.String
+  @objc public var isDebugEnabled: Swift.Bool
+  @objc public var delegate: (any ChottuLinkSDK.ChottuLinkDelegate)?
+  @objc public init(apiKey: Swift.String, isDebugEnabled: Swift.Bool = false, delegate: (any ChottuLinkSDK.ChottuLinkDelegate)? = nil)
+  @objc deinit
+}
+@objc final public class CLConversionMeta : ObjectiveC.NSObject {
+  @objc final public let revenue: Swift.Double
+  @objc final public let currency: Swift.String?
+  @objc final public let eventName: Swift.String?
+  @objc final public let productId: Swift.String?
+  @objc final public let transactionId: Swift.String?
+  @objc final public let metadata: [Swift.String : Any]?
+  @objc public init(revenue: Swift.Double, currency: Swift.String? = nil, eventName: Swift.String? = nil, productId: Swift.String? = nil, transactionId: Swift.String? = nil, metadata: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+@objc final public class CLCustomerMeta : ObjectiveC.NSObject {
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String?
+  @objc final public let email: Swift.String?
+  @objc final public let phone: Swift.String?
+  @objc final public let emailSha256: Swift.String?
+  @objc final public let phoneSha256: Swift.String?
+  @objc public init(id: Swift.String, name: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, emailSha256: Swift.String? = nil, phoneSha256: Swift.String? = nil)
+  @objc deinit
+}
+@objc public enum CLDynamicLinkBehaviour : Swift.Int, Swift.CaseIterable, Swift.Codable, Swift.Sendable {
+  case browser = 1
+  case app = 2
+  public init?(rawValue: Swift.Int)
   public typealias AllCases = [ChottuLinkSDK.CLDynamicLinkBehaviour]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [ChottuLinkSDK.CLDynamicLinkBehaviour] {
@@ -51,85 +93,94 @@ public enum CLDynamicLinkBehaviour : Swift.Int, Swift.CaseIterable, Swift.Codabl
     get
   }
 }
-public struct CLDynamicLinkBuilder : Swift.Codable, Swift.Sendable {
-  public init(destinationURL: Swift.String, domain: Swift.String)
+@objc final public class CLDynamicLinkBuilder : ObjectiveC.NSObject, Swift.Codable, @unchecked Swift.Sendable {
+  @objc public init(destinationURL: Swift.String, domain: Swift.String)
   @discardableResult
-  public func setIOSBehaviour(_ behaviour: ChottuLinkSDK.CLDynamicLinkBehaviour) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setIOSBehaviour(_ behaviour: ChottuLinkSDK.CLDynamicLinkBehaviour) -> Self
   @discardableResult
-  public func setAndroidBehaviour(_ behaviour: ChottuLinkSDK.CLDynamicLinkBehaviour) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setAndroidBehaviour(_ behaviour: ChottuLinkSDK.CLDynamicLinkBehaviour) -> Self
   @discardableResult
-  public func setLinkName(_ name: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setLinkName(_ name: Swift.String) -> Self
   @discardableResult
-  public func setSelectedPath(_ path: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setSelectedPath(_ path: Swift.String) -> Self
   @discardableResult
-  public func setSocialTitle(_ title: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setSocialTitle(_ title: Swift.String) -> Self
   @discardableResult
-  public func setSocialDescription(_ description: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setSocialDescription(_ description: Swift.String) -> Self
   @discardableResult
-  public func setSocialImageUrl(_ imageUrl: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setSocialImageUrl(_ imageUrl: Swift.String) -> Self
   @discardableResult
-  public func setUTMCampaign(_ campaign: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setUTMCampaign(_ campaign: Swift.String) -> Self
   @discardableResult
-  public func setUTMContent(_ content: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setUTMContent(_ content: Swift.String) -> Self
   @discardableResult
-  public func setUTMMedium(_ medium: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setUTMMedium(_ medium: Swift.String) -> Self
   @discardableResult
-  public func setUTMSource(_ source: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setUTMSource(_ source: Swift.String) -> Self
   @discardableResult
-  public func setUTMTerm(_ term: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
-  public func build() -> ChottuLinkSDK.CLDynamicLinkBuilder
-  public func encode(to encoder: any Swift.Encoder) throws
+  @objc final public func setUTMTerm(_ term: Swift.String) -> Self
+  @objc final public func build() -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 extension ChottuLinkSDK.CLDynamicLinkBuilder {
-  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
-  public func setUTMParameters(source: Swift.String, medium: Swift.String, campaign: Swift.String, content: Swift.String? = nil, term: Swift.String? = nil) -> ChottuLinkSDK.CLDynamicLinkBuilder
-  #endif
+  @objc final public func setUTMParameters(source: Swift.String, medium: Swift.String, campaign: Swift.String, content: Swift.String? = nil, term: Swift.String? = nil) -> Self
   @discardableResult
-  public func setSocialParameters(title: Swift.String, description: Swift.String, imageUrl: Swift.String) -> ChottuLinkSDK.CLDynamicLinkBuilder
+  @objc final public func setSocialParameters(title: Swift.String, description: Swift.String, imageUrl: Swift.String) -> Self
 }
-public struct ResolvedLink : Swift.Codable, Swift.Sendable {
-  public let isDeferred: Swift.Bool
-  public let link: Foundation.URL?
-  public let shortLink: Foundation.URL?
-  public let shortLinkRaw: Foundation.URL?
-  public func encode(to encoder: any Swift.Encoder) throws
+@objc final public class CLLeadMeta : ObjectiveC.NSObject {
+  @objc final public let eventName: Swift.String?
+  @objc final public let metadata: [Swift.String : Any]?
+  @objc public init(eventName: Swift.String? = nil, metadata: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+@objc final public class ResolvedLink : ObjectiveC.NSObject, Swift.Codable, @unchecked Swift.Sendable {
+  @objc final public let isDeferred: Swift.Bool
+  @objc final public let link: Foundation.URL?
+  @objc final public let shortLink: Foundation.URL?
+  @objc final public let shortLinkRaw: Foundation.URL?
+  @objc public init(isDeferred: Swift.Bool = false, link: Foundation.URL?, shortLink: Foundation.URL?, shortLinkRaw: Foundation.URL?)
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_Concurrency.MainActor public protocol ChottuLinkDelegate : AnyObject {
-  @_Concurrency.MainActor func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
-  @_Concurrency.MainActor func chottuLink(didFailToInitializeWith error: any Swift.Error)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
-  #endif
+@_Concurrency.MainActor @objc public protocol ChottuLinkDelegate {
+  @objc @_Concurrency.MainActor func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
+  @objc @_Concurrency.MainActor func chottuLink(didFailToInitializeWith error: any Swift.Error)
+  @objc @_Concurrency.MainActor func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
+  @objc @_Concurrency.MainActor func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
 }
 extension ChottuLinkSDK.ChottuLinkDelegate {
   @_Concurrency.MainActor public func chottuLink(didInitializeWith configuration: ChottuLinkSDK.CLConfiguration)
   @_Concurrency.MainActor public func chottuLink(didFailToInitializeWith error: any Swift.Error)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func chottuLink(didResolveDeepLink link: Foundation.URL, metadata: [Swift.String : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func chottuLink(didFailToResolveDeepLink originalURL: Foundation.URL?, error: any Swift.Error)
-  #endif
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class ChottuLink : ObjectiveC.NSObject {
-  @_Concurrency.MainActor public static func initialize(config: ChottuLinkSDK.CLConfiguration)
-  @_Concurrency.MainActor public static func handleLink(_ shortURL: Foundation.URL)
-  #if compiler(>=5.3) && $NonescapableTypes
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor @objc final public class ChottuLink : ObjectiveC.NSObject {
+  @objc @_Concurrency.MainActor public static func initialize(config: ChottuLinkSDK.CLConfiguration)
+  @objc @_Concurrency.MainActor public static func handleLink(_ shortURL: Foundation.URL)
   @available(swift, deprecated: 5.5, message: "Use the async version of `createDynamicLink(for:)` instead.")
   @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder, completion: @escaping (_ link: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder) async throws -> Swift.String?
-  #endif
-  @_Concurrency.MainActor public static func getAppLinkDataFromUrl(from shortURL: Swift.String) async throws -> ChottuLinkSDK.ResolvedLink
+  @objc @_Concurrency.MainActor public static func createDynamicLink(for link: ChottuLinkSDK.CLDynamicLinkBuilder) async throws -> Swift.String?
+  @objc @_Concurrency.MainActor public static func getAppLinkDataFromUrl(from shortURL: Swift.String) async throws -> ChottuLinkSDK.ResolvedLink
+  @objc @_Concurrency.MainActor public static func getAttributionData() -> ChottuLinkSDK.CLAttributionData?
+  @objc @_Concurrency.MainActor public static func identify(_ customer: ChottuLinkSDK.CLCustomerMeta)
+  @objc @_Concurrency.MainActor public static func trackLead(_ meta: ChottuLinkSDK.CLLeadMeta?)
+  @objc @_Concurrency.MainActor public static func trackConversion(_ meta: ChottuLinkSDK.CLConversionMeta)
+  @objc @_Concurrency.MainActor public static func trackEvent(name: Swift.String, data: [Swift.String : Any]?)
+  @objc @_Concurrency.MainActor public static func flush()
+  @objc @_Concurrency.MainActor public static func logout()
+  @objc @_Concurrency.MainActor public static func optOut(_ enabled: Swift.Bool)
+  @objc @_Concurrency.MainActor public static var isOptedOut: Swift.Bool {
+    @objc get
+  }
   @objc deinit
 }
+extension ChottuLinkSDK.ChottuLinkError : Swift.Equatable {}
+extension ChottuLinkSDK.ChottuLinkError : Swift.Hashable {}
+extension ChottuLinkSDK.ChottuLinkError : Swift.RawRepresentable {}
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.Equatable {}
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.Hashable {}
 extension ChottuLinkSDK.CLDynamicLinkBehaviour : Swift.RawRepresentable {}

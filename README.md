@@ -1,14 +1,9 @@
-[![Version](https://img.shields.io/badge/version-1.0.8-blue.svg)](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/releases)
 # ChottuLinkSDK
 
-## 🚀 What's New in `v1.0.8`
+## 🚀 What's New in `v1.1.0`
 
-This release includes **enhanced link data access**, **improved credential handling**, and **better error handling** across all methods.
-
-### Key Updates:
-- **Exposed `shortLinkRaw`** in `getAppLinkDataFromUrl` method for direct access to raw short link data
-- **Added 3-second delay** for missing credentials in `handleLink` methods to improve reliability
-- **Improved error handling** for all methods with more descriptive error messages and better error recovery
+This release includes internal improvements and stability updates.
 
 ## 🚀 Features
 
@@ -34,7 +29,7 @@ Use the following in your Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.0.8")
+    .package(url: "https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk", from: "1.1.0")
 ]
 ```
 > [!TIP]
@@ -109,11 +104,9 @@ We're actively working on:
 
 ## 📋 Changelog
 
-### Latest – v1.0.8 (Current Release)
+### Latest – v1.1.0 (Current Release)
 
-- **Exposed `shortLinkRaw`**: Now available in `getAppLinkDataFromUrl` method for direct access to raw short link data
-- **Credential Handling**: Added 3-second delay for missing credentials in `handleLink` methods to improve reliability
-- **Error Handling**: Improved error handling across all methods with more descriptive error messages and better error recovery
+- Internal improvements and stability updates
 - Fully backward compatible with previous versions
 
 [View full changelog →](https://github.com/ConnectingDotsInfotech/chottulink-ios-sdk/blob/main/CHANGELOG.md)

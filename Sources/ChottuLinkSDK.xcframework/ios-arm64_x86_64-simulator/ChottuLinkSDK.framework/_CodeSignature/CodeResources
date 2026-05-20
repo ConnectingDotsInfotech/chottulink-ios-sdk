@@ -4,77 +4,99 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/ChottuLinkSDK-Swift.h</key>
+		<data>
+		P+B92cuOMQCKmB4nu6PQx7QQ38s=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		N4ESVbPlDhmuO80h0QS2pPdhoUs=
+		Zlt3NmH0tiJMQae/2YNdk1q23zA=
 		</data>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		qqTg1NTjiLsv8IP7B62Hn2vrBOo=
+		PcN3U4hN/mDHRlKRZmT0JpTgGlA=
 		</data>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ebfiFODFav7yXSqoeSMiiHKJnrU=
+		ENQhsP5LhU35wDaEq06rwm+/Sw8=
 		</data>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1JpiGhADX6qvnbbh4bGFW8WCOU8=
+		NU6l8jliUKmiW7YeyWynu2Sl7WI=
 		</data>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ebfiFODFav7yXSqoeSMiiHKJnrU=
+		ENQhsP5LhU35wDaEq06rwm+/Sw8=
 		</data>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WfAZnxMcrp74cykqgvLUnqDReXg=
+		DP87v4F0mpAPXlFWNMplzCOqjgI=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		XKKmMI1gdtIgWwUolp9w4LuJosw=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		56mJzi17rbQBJNRfcStLmcv84VE=
+		QAdrFS6dieFbo0mMxWkalQwMdNc=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/ChottuLinkSDK-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dnK0wnANU23jCz5s6Ib1pm0Gq0mwyjBXfw/0qPcydkc=
+			</data>
+		</dict>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U0j1nyvkEBfmo4h5KwiD1yhe8Gvk11HtbXN8Xa3CrUM=
+			3eWGKk9oUUXYfGZsYVWGHuLUiIcTGhCGnPZiD7LF3cI=
 			</data>
 		</dict>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q+5sCPZdF8RbKKuVlXF/BXGynxMgvvsXe4LQOwtFRIY=
+			/GT5YZVJ1ZZOAja56UQORoQaksRe9cNPW3xa4muQGqM=
 			</data>
 		</dict>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a/t+GL4U9XZoNPnufbSbgPCS8s8Zp8tLZV1HHKw6wSo=
+			d/mHTKYJdrRSt+GY90p0TGku66nKvLudnb3mJFTkX4Q=
 			</data>
 		</dict>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q+5sCPZdF8RbKKuVlXF/BXGynxMgvvsXe4LQOwtFRIY=
+			/GT5YZVJ1ZZOAja56UQORoQaksRe9cNPW3xa4muQGqM=
 			</data>
 		</dict>
 		<key>Modules/ChottuLinkSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TFo3uQ7AcJXzbKzea/I5liS8payKx0TZNpe9SKudo9k=
+			eUuYBIAfdVW4NSKx755g48RaAjlU4JHq3209tqMc/8s=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yqFHAH+lkyxU2ej/GqgjH7QV67vuvXs06LNLIMqJ3vg=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xotcq7Gbd8JzFyKYjZhJZ68zyWWa5W+d0wg2stxTXdM=
+			X6c0Rhi52nPmosB5HICbFgoiex37LYx8WxO9/ljNb9Y=
 			</data>
 		</dict>
 	</dict>
